@@ -1,0 +1,17 @@
+{
+    "name": "meu-projeto-node",
+    "version": "1.0.0",
+    "description": "Um projeto Node.js simples para o Full Cycle Rocks!",
+    "main": "app.js",
+    "scripts": {
+      "start": "node app.js"
+    },
+    "author": "Genivaldo Fernandes",
+    "license": "MIT",
+    "dependencies": {
+      "express": "^4.17.1",
+      "mysql": "^2.18.1"
+
+    }
+  }
+  

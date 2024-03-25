@@ -21,11 +21,11 @@ COPY ./docker-entrypoint.sh /usr/src/app/docker-entrypoint.sh
 # Conceda permissões de execução para o script
 RUN chmod +x /usr/src/app/docker-entrypoint.sh
 
-COPY . .
+COPY ./main ./main
 
 EXPOSE 3000
 
 # Execute o script de entrada
 ENTRYPOINT ["/usr/src/app/docker-entrypoint.sh"]
 
-CMD ["node", "app.js"]
+CMD ["node", "./main/app.js"]

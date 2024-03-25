@@ -23,6 +23,8 @@ services:
       dockerfile: Dockerfile
     ports:
       - "3000:3000"
+    volumes:
+      - ./node/main:/usr/src/app/main
     networks:
       - nodenet
     depends_on:
